@@ -31,3 +31,26 @@ void expStr::sheerUntilMarker(string& save, char marker, int startLoc, bool remo
 		this->erase(startLoc, markDist);
 	}
 }
+void expStr::autoForm()
+{
+	int len = this->length();
+	int itr = 0;
+	expStr scan;
+	scan = *this;
+	while (itr < len--)
+	{
+		len = this->length();
+		//worlds dumbest fucking conditaional ever
+		if(scan[itr] == '#' || scan[itr] == '%' || scan[itr] == '&' || scan[itr] == '{' || scan[itr] == '}' || scan[itr] == '\\' || scan[itr] == '<' || scan[itr] == '>' || scan[itr] == '*' || scan[itr] == '?' || scan[itr] == '/' || scan[itr] == '$' || scan[itr] == '!' || scan[itr] == '\'' || scan[itr] == '\"' || scan[itr] == ':' || scan[itr] == '@' || scan[itr] == '+' || scan[itr] == '`' || scan[itr] == '|' || scan[itr] == '=')
+		{
+			this->erase(itr, 1);
+		}
+		else if(scan[itr] == ' ')
+		{
+			scan[itr] = '_';
+		}
+		itr++;
+	}
+	this->erase();
+	this->append(scan);
+}
