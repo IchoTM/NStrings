@@ -18,6 +18,11 @@ void expStr::sheerUntilMarker(string& save, char marker, int startLoc, bool remo
 	{
 		markDist++;
 		markLocat++;
+		if(markDist++ > scan.length())
+		{
+			cout << "index_out_of_bouds" << endl;
+			break;
+		}
 	}
 
 	save.append(*this, startLoc, markDist);

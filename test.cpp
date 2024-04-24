@@ -15,7 +15,7 @@ int main()
 	test.erase();
 	test.append("this is_a test_of sheerUntilMarker");
 
-	test.sheerUntilMarker(save, '_', 8, false);
+	test.sheerUntilMarker(save, '_', 15, false);
 	
 	cout << save << endl;
 	cout << test << endl;
