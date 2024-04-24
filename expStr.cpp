@@ -1,31 +1,33 @@
 #include "expStr.h"
 
-void expStr::sheer(string& target, string& save, int startLoc, int sheerAmt)
+void expStr::sheer(string& save, int startLoc, int sheerAmt)
 {
 	save = "";
-	save.append(target, startLoc, sheerAmt);
-	target.erase(startLoc, sheerAmt);
+	save.append(*this, startLoc, sheerAmt);
+	this->erase(startLoc, sheerAmt);
 }
-void expStr::sheerUntilMarker(string& target, string& save, char marker, int startLoc, bool removeMarker)
+void expStr::sheerUntilMarker(string& save, char marker, int startLoc, bool removeMarker)
 {
 	save = "";
 	int markLocat = startLoc;
 	int markDist = 0;
+	string scan;
+	scan = *this;
 
-	while (target[markLocat] != marker)
+	while (scan[markLocat] != marker)
 	{
 		markDist++;
 		markLocat++;
 	}
 
-	save.append(target, startLoc, markDist);
+	save.append(*this, startLoc, markDist);
 	if (removeMarker) 
 	{
 		markDist += 1;
-		target.erase(startLoc, markDist);
+		this->erase(startLoc, markDist);
 	}
 	else
 	{
-		target.erase(startLoc, markDist);
+		this->erase(startLoc, markDist);
 	}
 }

@@ -6,13 +6,14 @@ int main()
 	expStr test;
 	expStr save;
 	test.append("this is_a test_of sheerUntilMarker");
-	test.sheerUntilMarker(test, save, '_', 0, true);
+	
+	//test.sheer(save, 0, 5);
 
-	cout << save << endl;
-	cout << test << endl;
+	/*cout << save << endl;
+	cout << test << endl;*/
 
-	test.sheerUntilMarker(test, save, '_', 8, true);
-
+	test.sheerUntilMarker(save, '_', 8, false);
+	
 	cout << save << endl;
 	cout << test << endl;
 }

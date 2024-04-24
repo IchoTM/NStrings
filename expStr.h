@@ -4,6 +4,6 @@ using namespace std;
 class expStr : public string
 {
 	public:
-		void sheer(string&, string&, int, int);
-		void sheerUntilMarker(string&, string&, char, int, bool);
+		void sheer(string&, int, int);
+		void sheerUntilMarker(string&, char, int, bool);
 };

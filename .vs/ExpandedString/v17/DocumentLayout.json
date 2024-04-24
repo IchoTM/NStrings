@@ -3,15 +3,12 @@
   "WorkspaceRootPath": "F:\\repos\\ExpandedString\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{653EB568-AE06-4490-B2C6-1FA316AFFEEF}|ExpandedString.vcxproj|F:\\repos\\ExpandedString\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{653EB568-AE06-4490-B2C6-1FA316AFFEEF}|ExpandedString.vcxproj|solutionrelative:test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{653EB568-AE06-4490-B2C6-1FA316AFFEEF}|ExpandedString.vcxproj|E:\\VSC IDE\\VC\\TOOLS\\MSVC\\14.36.32532\\INCLUDE\\XSTRING||{3B902123-F8A7-4915-9F01-361F908088D0}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{653EB568-AE06-4490-B2C6-1FA316AFFEEF}|ExpandedString.vcxproj|F:\\repos\\ExpandedString\\expStr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{653EB568-AE06-4490-B2C6-1FA316AFFEEF}|ExpandedString.vcxproj|solutionrelative:expStr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{653EB568-AE06-4490-B2C6-1FA316AFFEEF}|ExpandedString.vcxproj|F:\\repos\\ExpandedString\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{653EB568-AE06-4490-B2C6-1FA316AFFEEF}|ExpandedString.vcxproj|solutionrelative:test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{653EB568-AE06-4490-B2C6-1FA316AFFEEF}|ExpandedString.vcxproj|F:\\repos\\ExpandedString\\expStr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -34,49 +31,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "xstring",
-              "DocumentMoniker": "E:\\VSC IDE\\VC\\Tools\\MSVC\\14.36.32532\\include\\xstring",
-              "ToolTip": "E:\\VSC IDE\\VC\\Tools\\MSVC\\14.36.32532\\include\\xstring",
-              "ViewState": "AQIAAMcPAAAAAAAAAAAkwN4PAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-21T19:37:44.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "test.cpp",
               "DocumentMoniker": "F:\\repos\\ExpandedString\\test.cpp",
               "RelativeDocumentMoniker": "test.cpp",
               "ToolTip": "F:\\repos\\ExpandedString\\test.cpp",
               "RelativeToolTip": "test.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-21T19:21:34.069Z",
+              "WhenOpened": "2024-04-24T01:24:18.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "expStr.cpp",
               "DocumentMoniker": "F:\\repos\\ExpandedString\\expStr.cpp",
               "RelativeDocumentMoniker": "expStr.cpp",
               "ToolTip": "F:\\repos\\ExpandedString\\expStr.cpp",
               "RelativeToolTip": "expStr.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-21T19:09:39.246Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "expStr.h",
               "DocumentMoniker": "F:\\repos\\ExpandedString\\expStr.h",
               "RelativeDocumentMoniker": "expStr.h",
               "ToolTip": "F:\\repos\\ExpandedString\\expStr.h",
               "RelativeToolTip": "expStr.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-21T19:09:12.531Z",
               "EditorCaption": ""
