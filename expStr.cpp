@@ -39,17 +39,18 @@ void expStr::autoForm()
 	scan = *this;
 	while (itr < len--)
 	{
-		len = this->length();
-		//worlds dumbest fucking conditaional ever
+		//worlds dumbest fucking conditaional ever, will change this in the furture
 		if(scan[itr] == '#' || scan[itr] == '%' || scan[itr] == '&' || scan[itr] == '{' || scan[itr] == '}' || scan[itr] == '\\' || scan[itr] == '<' || scan[itr] == '>' || scan[itr] == '*' || scan[itr] == '?' || scan[itr] == '/' || scan[itr] == '$' || scan[itr] == '!' || scan[itr] == '\'' || scan[itr] == '\"' || scan[itr] == ':' || scan[itr] == '@' || scan[itr] == '+' || scan[itr] == '`' || scan[itr] == '|' || scan[itr] == '=')
 		{
-			this->erase(itr, 1);
+			scan.erase(itr,1);
+			itr--;
 		}
 		else if(scan[itr] == ' ')
 		{
 			scan[itr] = '_';
 		}
 		itr++;
+		len = scan.length();
 	}
 	this->erase();
 	this->append(scan);

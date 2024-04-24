@@ -21,7 +21,7 @@ int main()
 	cout << test << endl;
 
 	test.erase();
-	test.append("this is an example of auto formating");
+	test.append("this is @n example* of au#o format|ng");
 
 	test.autoForm();
 	cout << test << endl;
