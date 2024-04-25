@@ -72,3 +72,53 @@ bool expStr::isIllegal(char sus)
 	}
 	return false;
 }
+void expStr::addLaw(char outlaw)
+{
+	illegalChars.push_back(outlaw);
+}
+void expStr::baseLaw()
+{
+	illegalChars.push_back('#');
+	illegalChars.push_back('%');
+	illegalChars.push_back('&');
+	illegalChars.push_back('{');
+	illegalChars.push_back('}');
+	illegalChars.push_back('\\');
+	illegalChars.push_back('<');
+	illegalChars.push_back('>');
+	illegalChars.push_back('*');
+	illegalChars.push_back('?');
+	illegalChars.push_back('/');
+	illegalChars.push_back('$');
+	illegalChars.push_back('!');
+	illegalChars.push_back('\'');
+	illegalChars.push_back('\"');
+	illegalChars.push_back(':');
+	illegalChars.push_back('@');
+	illegalChars.push_back('+');
+	illegalChars.push_back('`');
+	illegalChars.push_back('|');
+	illegalChars.push_back('=');
+}
+void expStr::rmvLaw(char legal)
+{
+	int pos = 0;
+	for(char illegal : illegalChars)
+	{
+		pos++;
+		if(illegal == legal)
+		{
+			pos--;
+			illegalChars.erase(illegalChars.begin() + pos);
+		}
+	}
+}
+void expStr::getLaws() const
+{
+	cout << "Laws: ";
+	for(char law : illegalChars)
+	{
+		cout << law << ' ';
+	}
+	cout << endl;
+}
