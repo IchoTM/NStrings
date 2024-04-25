@@ -1,4 +1,6 @@
 ﻿  expStr.cpp
 C:\Users\John\source\repos\ExpandedStrings_for_CPP\expStr.cpp(41,10): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\John\source\repos\ExpandedStrings_for_CPP\expStr.cpp(58,20): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\John\source\repos\ExpandedStrings_for_CPP\expStr.cpp(59,20): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  test.cpp
+  Generating Code...
   ExpandedString.vcxproj -> C:\Users\John\source\repos\ExpandedStrings_for_CPP\x64\Debug\ExpandedString.exe

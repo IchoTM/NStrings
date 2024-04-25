@@ -42,10 +42,11 @@ void expStr::autoForm()
 	int itr = 0;
 	expStr scan;
 	scan = *this;
+	bool check;
 	while (itr < len--)
 	{
-		//worlds dumbest fucking conditaional ever, will change this in the furture
-		if(scan[itr] == '#' || scan[itr] == '%' || scan[itr] == '&' || scan[itr] == '{' || scan[itr] == '}' || scan[itr] == '\\' || scan[itr] == '<' || scan[itr] == '>' || scan[itr] == '*' || scan[itr] == '?' || scan[itr] == '/' || scan[itr] == '$' || scan[itr] == '!' || scan[itr] == '\'' || scan[itr] == '\"' || scan[itr] == ':' || scan[itr] == '@' || scan[itr] == '+' || scan[itr] == '`' || scan[itr] == '|' || scan[itr] == '=')
+		check = isIllegal(scan[itr]);
+		if(check == true)
 		{
 			scan.erase(itr,1);
 			itr--;
@@ -59,4 +60,15 @@ void expStr::autoForm()
 	}
 	this->erase();
 	this->append(scan);
+}
+bool expStr::isIllegal(char sus)
+{
+	for(char ill : expStr::illegalChars)
+	{
+		if(sus == ill)
+		{
+			return true;
+		}
+	}
+	return false;
 }
