@@ -122,3 +122,28 @@ void expStr::getLaws() const
 	}
 	cout << endl;
 }
+vector<expStr> expStr::divideByDelim(char delim, bool clear)
+{
+	int itr = 0;
+	expStr scan = *this;
+	vector<expStr> divided;
+	expStr addition;
+	int max = scan.length();
+
+	while (itr <= max)
+	{
+		if (scan[itr] != delim && itr != max)
+		{
+			addition.append(string(1, scan[itr]));
+		}
+		else if (scan[itr] == delim || itr == max)
+		{
+			divided.push_back(addition);
+			addition.erase();
+		}
+		itr++;
+	}
+	if (clear == true)
+		this->erase();
+	return divided;
+}

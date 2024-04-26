@@ -16,4 +16,5 @@ class expStr : public string
 		void baseLaw();
 		void rmvLaw(char);
 		void getLaws() const;
+		vector<expStr> divideByDelim(char,bool);
 };
