@@ -147,3 +147,32 @@ vector<expStr> expStr::divideByDelim(char delim, bool clear)
 		this->erase();
 	return divided;
 }
+vector<expStr> expStr::divideByLength(int divisor)
+{
+	//Work in progress
+	int length = this->length();
+	int segLen;
+	int itr = 0;
+	int loc = 0;
+	expStr ape;
+	vector<expStr> res;
+
+	if(length % divisor == 0)
+	{
+		segLen = length / divisor;
+
+		while (itr < length)
+		{
+			itr++;
+			ape.erase();
+			while (loc < segLen)
+			{
+				loc++;
+				ape.append("1");
+			}
+			res.push_back(ape);
+		}
+	}
+
+	return res;
+}
