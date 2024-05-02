@@ -7,7 +7,8 @@ int main()
 	expStr test;
 	expStr save;
 	vector<expStr> divd;
-	test.append("190029630");
+	test = "190029630";
+	test = "280039459";
 	divd = test.divideByLength(3);
 	cout << divd[0] << ' ' << divd[1] << ' ' << divd[2] << endl;
 	cout << test;

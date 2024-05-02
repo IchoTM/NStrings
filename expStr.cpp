@@ -153,7 +153,8 @@ vector<expStr> expStr::divideByLength(int divisor)
 	int length = this->length();
 	int segLen;
 	int itr = 0;
-	int loc = 0;
+	int loc;
+	expStr scan;
 	expStr ape;
 	vector<expStr> res;
 
@@ -163,16 +164,31 @@ vector<expStr> expStr::divideByLength(int divisor)
 
 		while (itr < length)
 		{
-			itr++;
+			loc = 0;
 			ape.erase();
 			while (loc < segLen)
 			{
 				loc++;
-				ape.append("1");
+				//ape += scan[loc];
+				cout << loc << ' ' << itr << ' ' << length << endl;
 			}
+			itr += divisor;
 			res.push_back(ape);
 		}
 	}
 
 	return res;
+}
+expStr& expStr::operator=(const char str[])
+{
+	this->erase();
+	this->append(str);
+	return *this;
+}
+expStr& expStr::operator+=(char add)
+{
+	string ad;
+	ad = add;
+	this->append(ad);
+	return *this;
 }

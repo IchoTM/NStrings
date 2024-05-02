@@ -18,4 +18,5 @@ class expStr : public string
 		vector<expStr> divideByDelim(char,bool);
 		vector<expStr> divideByLength(int);
 		expStr& operator=(const char[]);
+		expStr& operator+=(char);
 };
