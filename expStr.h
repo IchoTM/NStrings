@@ -6,7 +6,6 @@ class expStr : public string
 {
 	private:
 		vector<char> illegalChars;
-		//char illegalChars[21] = {'#','%','&','{','}','\\','<','>','*','?','/','$','!','\'','\"',':','@','+','`','|','='};
 		bool isIllegal(char);
 	public:
 		void sheer(string&, int, int);
@@ -16,4 +15,7 @@ class expStr : public string
 		void baseLaw();
 		void rmvLaw(char);
 		void getLaws() const;
+		vector<expStr> divideByDelim(char,bool);
+		expStr& operator=(const char[]);
+		expStr& operator+=(char);
 };
