@@ -147,38 +147,6 @@ vector<expStr> expStr::divideByDelim(char delim, bool clear)
 		this->erase();
 	return divided;
 }
-vector<expStr> expStr::divideByLength(int divisor)
-{
-	//Work in progress
-	int length = this->length();
-	int segLen;
-	int itr = 0;
-	int loc;
-	expStr scan;
-	expStr ape;
-	vector<expStr> res;
-
-	if(length % divisor == 0)
-	{
-		segLen = length / divisor;
-
-		while (itr < length)
-		{
-			loc = 0;
-			ape.erase();
-			while (loc < segLen)
-			{
-				loc++;
-				//ape += scan[loc];
-				cout << loc << ' ' << itr << ' ' << length << endl;
-			}
-			itr += divisor;
-			res.push_back(ape);
-		}
-	}
-
-	return res;
-}
 expStr& expStr::operator=(const char str[])
 {
 	this->erase();
