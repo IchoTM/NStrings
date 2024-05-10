@@ -18,4 +18,7 @@ class nstring : public string
 		vector<nstring> divideByDelim(char,bool);
 		nstring& operator=(const char[]);
 		nstring& operator+=(char);
+		nstring& operator!();
+		nstring& operator++();
+		nstring& operator--();
 };

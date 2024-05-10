@@ -160,3 +160,16 @@ nstring& nstring::operator+=(char add)
 	this->append(ad);
 	return *this;
 }
+nstring& nstring::operator!()
+{
+	this->erase();
+	return *this;
+}
+nstring& nstring::operator++()
+{
+	return *this;
+}
+nstring& nstring::operator--()
+{
+	return *this;
+}

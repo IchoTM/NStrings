@@ -9,5 +9,8 @@ int main()
 	test = "280.039.459";
 	divd = test.divideByDelim('.',true);
 	cout << divd[0] << ' ' << divd[1] << ' ' << divd[2] << endl;
+	test = "balls";
+	!test;
 	cout << test;
+
 }
