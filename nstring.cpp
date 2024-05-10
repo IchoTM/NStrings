@@ -40,7 +40,7 @@ void nstring::autoForm()
 {
 	int len = this->length();
 	int itr = 0;
-	nstring scan;
+	string scan;
 	scan = *this;
 	bool check;
 	while (itr < len--)
@@ -125,7 +125,7 @@ void nstring::getLaws() const
 vector<nstring> nstring::divideByDelim(char delim, bool clear)
 {
 	int itr = 0;
-	nstring scan = *this;
+	string scan = *this;
 	vector<nstring> divided;
 	nstring addition;
 	int max = scan.length();
@@ -165,11 +165,45 @@ nstring& nstring::operator!()
 	this->erase();
 	return *this;
 }
-nstring& nstring::operator++()
+nstring& nstring::operator+(nstring add)
 {
-	return *this;
+	string base = *this;
+	string ad = add;
+	ad = base + ad;
+	nstring ret;
+	ret = ad;
+	return ad;
 }
-nstring& nstring::operator--()
+char nstring::operator[](int index)
 {
-	return *this;
+	string base = *this;
+	return base[index];
+}
+bool nstring::operator==(nstring test)
+{
+	string base = *this;
+	string comp = test;
+
+	if(base==comp)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+bool nstring::operator!=(nstring test)
+{
+	string base = *this;
+	string comp = test;
+
+	if (base != comp)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }

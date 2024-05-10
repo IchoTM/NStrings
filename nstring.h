@@ -19,6 +19,8 @@ class nstring : public string
 		nstring& operator=(const char[]);
 		nstring& operator+=(char);
 		nstring& operator!();
-		nstring& operator++();
-		nstring& operator--();
+		nstring& operator+(nstring);
+		char operator[](int);
+		bool operator==(nstring);
+		bool operator!=(nstring);
 };

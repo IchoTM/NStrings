@@ -1,2 +1,9 @@
-﻿  test.cpp
+﻿  nstring.cpp
+C:\Users\John\Desktop\ES\nstring.cpp(41,10): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\John\Desktop\ES\nstring.cpp(59,20): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\John\Desktop\ES\nstring.cpp(131,10): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  test.cpp
+  Generating Code...
+C:\Users\John\Desktop\ES\nstring.cpp(173): warning C4717: 'nstring::operator+': recursive on all control paths, function will cause runtime stack overflow
+C:\Users\John\Desktop\ES\nstring.cpp(172): warning C4172: returning address of local variable or temporary: ret
   ExpandedString.vcxproj -> C:\Users\John\Desktop\ES\x64\Debug\ExpandedString.exe

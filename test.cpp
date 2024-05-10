@@ -5,12 +5,16 @@
 int main()
 {
 	nstring test;
+	nstring uwu;
+	uwu = "teehee";
 	vector<nstring> divd;
-	test = "280.039.459";
+	cin >> test;
 	divd = test.divideByDelim('.',true);
 	cout << divd[0] << ' ' << divd[1] << ' ' << divd[2] << endl;
 	test = "balls";
-	!test;
-	cout << test;
-
+	test;
+	test = test + uwu;
+	!uwu;
+	cout << test[3];
+	if (test != uwu) { cout << "TRUE!" << endl;}
 }
