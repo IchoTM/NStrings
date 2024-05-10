@@ -8,8 +8,8 @@ class nstring : public string
 		vector<char> illegalChars;
 		bool isIllegal(char);
 	public:
-		void sheer(string&, int, int);
-		void sheerUntilMarker(string&, char, int, bool);
+		nstring sheer(int, int);
+		nstring sheerUntilDelim(char, int, bool);
 		void autoForm();
 		void addLaw(char);
 		void baseLaw();

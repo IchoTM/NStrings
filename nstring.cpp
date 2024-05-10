@@ -1,14 +1,15 @@
 #include "nstring.h"
 
-void nstring::sheer(string& save, int startLoc, int sheerAmt)
+nstring nstring::sheer(int startLoc, int sheerAmt)
 {
-	save = "";
-	save.append(*this, startLoc, sheerAmt);
+	nstring ret;
+	ret.append(*this, startLoc, sheerAmt);
 	this->erase(startLoc, sheerAmt);
+	return ret;
 }
-void nstring::sheerUntilMarker(string& save, char marker, int startLoc, bool removeMarker)
+nstring nstring::sheerUntilDelim(char marker, int startLoc, bool removeMarker)
 {
-	save = "";
+	nstring ret;
 	int markLocat = startLoc;
 	int markDist = 0;
 	string scan;
@@ -25,7 +26,7 @@ void nstring::sheerUntilMarker(string& save, char marker, int startLoc, bool rem
 		}
 	}
 
-	save.append(*this, startLoc, markDist);
+	ret.append(*this, startLoc, markDist);
 	if (removeMarker) 
 	{
 		markDist += 1;
@@ -35,6 +36,8 @@ void nstring::sheerUntilMarker(string& save, char marker, int startLoc, bool rem
 	{
 		this->erase(startLoc, markDist);
 	}
+	
+	return ret;
 }
 void nstring::autoForm()
 {
