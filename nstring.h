@@ -17,5 +17,11 @@ class nstring : public string
 		void getLaws() const;
 		vector<nstring> divideByDelim(char,bool);
 		nstring& operator=(const char[]);
+		nstring& operator=(nstring);
 		nstring& operator+=(char);
+		nstring& operator+=(nstring);
+		nstring& operator+(nstring);
+		char operator[](int);
+		bool operator==(nstring);
+		bool operator!=(nstring);
 };
