@@ -153,6 +153,12 @@ nstring& nstring::operator=(const char str[])
 	this->append(str);
 	return *this;
 }
+nstring& nstring::operator=(nstring str)
+{
+	this->erase();
+	this->append(str);
+	return *this;
+}
 nstring& nstring::operator+=(char add)
 {
 	string ad;
@@ -160,19 +166,17 @@ nstring& nstring::operator+=(char add)
 	this->append(ad);
 	return *this;
 }
-nstring& nstring::operator!()
+nstring& nstring::operator+=(nstring add)
 {
-	this->erase();
+	this->append(add);
 	return *this;
 }
 nstring& nstring::operator+(nstring add)
 {
-	string base = *this;
-	string ad = add;
-	ad = base + ad;
 	nstring ret;
-	ret = ad;
-	return ad;
+	ret.append(*this);
+	ret.append(add);
+	return ret;
 }
 char nstring::operator[](int index)
 {

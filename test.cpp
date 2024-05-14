@@ -7,14 +7,8 @@ int main()
 	nstring test;
 	nstring uwu;
 	uwu = "teehee";
-	vector<nstring> divd;
-	cin >> test;
-	divd = test.divideByDelim('.',true);
-	cout << divd[0] << ' ' << divd[1] << ' ' << divd[2] << endl;
 	test = "balls";
-	test;
-	test = test + uwu;
-	!uwu;
-	cout << test[3];
+	test += uwu;
+	cout << test;
 	if (test != uwu) { cout << "TRUE!" << endl;}
 }
