@@ -1,2 +1,0 @@
-C:\Users\John\source\repos\ExpandedStrings_for_CPP\x64\Debug\ExpandedString.exe
-C:\Users\John\Desktop\ES\x64\Debug\ExpandedString.exe
