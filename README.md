@@ -1,4 +1,4 @@
-# Expanded C++ Strings!
+# NStrings for C++!
 
 ## What is this repo for?
 This repo aims to add some niche functions to strings with in C++. I started doing this when I inntially made the `sheer();` function and started talking about it with friends. I was soon told that what I was aiming to do was fairly usefull. So here I am, throwing this out to the world hoping that someone beyond me sees value in this project.
