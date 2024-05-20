@@ -12,6 +12,6 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-To report a vulnerability go [here](https://github.com/IchoTM/NStrings/issues) and create a new issue under the `Security` label.
+To report a vulnerability go [here](https://github.com/IchoTM/NStrings/security) and create a new advisory.
 
 The issues tab is check quite frequently normally response can be expect in a maximun of three days as of 5/20/2024
